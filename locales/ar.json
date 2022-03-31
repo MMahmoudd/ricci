@@ -1,0 +1,143 @@
+{
+  "global": {
+    "visitLink": "زيارة الرابط",
+    "itemAdded": "تم إضافة العنصر إلى سلة التسويق",
+    "goToCart": "اذهب إلى سلة التسويق",
+    "goToHome": "اذهب للصفحة الرئيسية",
+    "addToCart": "إضافة",
+    "home": "الرئيسية",
+    "menu": "القائمة",
+    "pages": "الصفحات",
+    "contactUs": "تواصل معنا",
+    "branches": "الفروع",
+    "ourBranches": "فروعنا",
+    "myAccount": "حسابي",
+    "orderHistory": "تاريخ الطلبات",
+    "gallery": "معرض الصور",
+    "news": "أخبار",
+    "information": "معلومات",
+    "noData": "لا يوجد بيانات الان"
+  },
+
+  "home": {
+    "sizes": "الأحجام",
+    "category": "القسم",
+    "Betefourmix": "مزيج بيتفور",
+    "orderNow": "اطلب الآن",
+    "ourPortifolioGallery": "معرض الصور لدينا",
+    "topProducts": "أفضل المنتجات",
+    "seeMore": "شاهد المزيد"
+  },
+
+  "login": {
+    "login": "تسجيل دخول",
+    "emailDescription": "لن يتم مشاركة بريدك الإلكتروني مع أي شخص آخر",
+    "emailPlaceholder": "ادخل بريدك",
+    "passwordPlaceholder": "ادخل كلمة المرور"
+  },
+
+  "register": {
+    "register": "التسجيل",
+    "createNew": "إنشاء حساب جديد",
+
+    "nameLabel": "الإسم",
+    "namePlaceholder": "إسمك",
+
+    "phoneLabel": "رقم الهاتف",
+    "phonePlaceholder": "رقم هاتفك",
+
+    "emailDescription": "لن يتم مشاركة بريدك الإلكتروني مع أي شخص آخر",
+
+    "emailPlaceholder": "ادخل بريدك",
+
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "ادخل كلمة المرور"
+  },
+
+  "menu": {
+    "category": "القسم",
+    "menu": "الفائمة",
+    "all": "الكل"
+  },
+
+  "search": {
+    "results": "نتائج البحث",
+    "noResults": "لا يوجد نتائج"
+  },
+
+  "contactUs": {
+    "contactUs": "تواصل معنا",
+    "getInTouch": "تواصل معنا، لنصنع شيء رائعا معا",
+    "namePlaceholder": "الإسم",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "messagePlaceholder": "الرسالة",
+    "send": "إرسال",
+    "phone": "الهاتف",
+    "address": "العنوان"
+  },
+
+  "branches": {
+    "branches": "الفروع",
+    "workdays": "أيام العمل",
+    "timesofWork": "أوقات العمل",
+    "noBranchesYet": "لا توجد فروع حالية"
+  },
+
+  "cart": {
+    "myCart": "سلة التسويق",
+    "backToShop": "الرجوع للتسوق",
+    "subtotal": "المجموع",
+    "continue": "أكمل",
+    "noItemsInCart": "لا يوجد عناصر في سلة التسويق",
+    "sizeSelcted": "الأحجام المُختارة",
+    "addOnName": "Add on Name",
+    "addOnPrice": "Add on Price"
+  },
+
+  "checkout": {
+    "checkout": "الدفع",
+    "chooseNewLocation": "اختار عنوان جديد",
+    "deleteAllCartData": "احذف جميع عناصر السلة",
+    "subtotal": "المجموع",
+    "delivery": "التوصيل",
+    "addNewAddress": "إضافة عنوان جديد",
+    "noOrdersYet": "لا توجد طلبات بعد",
+    "backToProducts": "الرجوع لمنتجاتك",
+    "selectGovernrate": "اختر محافظة",
+    "selectArea": "اختار منطقة",
+    "steetAddress": "عنوان الشارع",
+    "phone": "الهاتف",
+    "createAddress": "إنشاء عنوان",
+    "couponPlaceholder": "ادخل الكوبون",
+    "submitCoupon": "إرسال",
+    "discount": "الخصم",
+
+    "deliveryTime": "وقت التوصيل",
+    "min": "د"
+  },
+
+  "profile": {
+    "hello": "مرحبا",
+    "name": "الإسم",
+    "email": "البريد الإلكتروني",
+    "mobile": "الهاتف",
+    "editProfile": "تعديل الحساب",
+    "edit": "تعديل",
+
+    "namePlaceholder": "ادخل اسمك",
+
+    "phonePlaceholder": "ادخل رقم هاتفك",
+
+    "emailDescription": "لن يتم مشاركة بريدك الإلكتروني مع أي شخص آخر",
+
+    "emailPlaceholder": "ادخل بريدك",
+
+    "orderDetails": "تفاصيل الطلبات",
+    "addressCastoumer": "عنوان العميل",
+
+    "myAccount": "حسابي",
+    "account": "الحساب",
+    "myOrder": "طلباتي",
+    "logout": "تسجيل خروج"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "global": {
+    "visitLink": "visit link",
+    "itemAdded": "Item Added To Your Cart",
+    "goToCart": "Go To Your Cart",
+    "goToHome": "Go To Home Page",
+    "addToCart": "Add To Cart",
+    "home": "Home",
+    "menu": "Menu",
+    "pages": "Pages",
+    "contactUs": "Contact US",
+    "branches": "Branches",
+    "ourBranches": "Our Branches",
+    "myAccount": "My Account",
+    "orderHistory": "Order History",
+    "gallery": "Gallery",
+    "news": "News",
+    "information": "Information",
+    "noData": "No data for now"
+  },
+
+  "home": {
+    "sizes": "Sizes",
+    "category": "Category",
+    "Betefourmix": "Betefour mix",
+
+    "orderNow": "Order Now",
+    "ourPortifolioGallery": "Our Portifolio Gallery",
+    "topProducts": "Top Products",
+    "seeMore": "See More"
+  },
+
+  "login": {
+    "login": "Login",
+    "emailDescription": "We'll never share your email with anyone else.",
+    "emailPlaceholder": "Enter email",
+    "passwordPlaceholder": "Enter Password"
+  },
+
+  "register": {
+    "register": "Register",
+    "createNew": "Create a new Account",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your Name",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "Your Phone",
+    "emailDescription": "We'll never share your email with anyone else.",
+    "emailPlaceholder": "Enter email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter Password"
+  },
+
+  "menu": {
+    "category": "Category",
+    "menu": "Menu",
+    "all": "All"
+  },
+
+  "search": {
+    "results": "research results",
+    "noResults": "No Results"
+  },
+
+  "contactUs": {
+    "contactUs": "Contact Us",
+    "getInTouch": "Get In Touch & Let's Make Something Awesome Aogether.",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "message",
+    "send": "Send",
+    "phone": "Phone",
+    "address": "Address"
+  },
+
+  "branches": {
+    "branches": "Branches",
+    "workdays": "workdays",
+    "timesofWork": "Times of Work",
+    "noBranchesYet": "No Branches Yet"
+  },
+
+  "cart": {
+    "myCart": "My Cart",
+    "backToShop": "back to shop",
+    "subtotal": "Subtotal",
+    "continue": "Continue",
+    "noItemsInCart": "No Items In Cart",
+    "sizeSelcted": "Size selcted",
+    "addOnName": "Add on Name",
+    "addOnPrice": "Add on Price"
+  },
+
+  "checkout": {
+    "checkout": "checkout",
+    "chooseNewLocation": "Choose New Location",
+    "deleteAllCartData": "Delete All Cart Data",
+    "subtotal": "Subtotal",
+    "delivery": "Delivery",
+    "addNewAddress": "Add New Address",
+    "noOrdersYet": "No Orders Yet",
+    "backToProducts": "back to Add your Products",
+    "selectGovernrate": "select governrate",
+    "selectArea": "select area",
+    "steetAddress": "street address",
+    "phone": "phone",
+    "createAddress": "Create address",
+
+    "couponPlaceholder": "Enter Coupon",
+    "submitCoupon": "Apply Coupon",
+
+    "discount": "Discount",
+
+    "deliveryTime": "Delivery Time",
+    "min": "Min"
+  },
+
+  "profile": {
+    "hello": "Hello",
+    "name": "Name",
+    "email": "E-mail",
+    "mobile": "Mobile",
+    "editProfile": "Edit Profile",
+    "edit": "Edit",
+
+    "namePlaceholder": "Enter Your Name",
+
+    "phonePlaceholder": "Enter Your Phone",
+
+    "emailDescription": "We'll never share your email with anyone else.",
+
+    "emailPlaceholder": "Enter email",
+
+    "orderDetails": "Order Details",
+    "addressCastoumer": "Address Castoumer",
+
+    "myAccount": "My Account",
+    "account": "Account",
+    "myOrder": "My Order",
+    "logout": "Logout"
+  }
+}
