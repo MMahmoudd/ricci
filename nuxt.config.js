@@ -9,8 +9,8 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        titleTemplate: "%s - labouffe",
-        title: "labouffe",
+        titleTemplate: "%s - Ricci",
+        title: "Ricci",
         htmlAttrs: {
             lang: "en",
         },
@@ -81,13 +81,13 @@ export default {
     modules: ["bootstrap-vue/nuxt", "@nuxtjs/pwa", "cookie-universal-nuxt"],
     pwa: {
         meta: {
-            title: "labouffe",
-            author: "labouffe",
+            title: "Ricci",
+            author: "Ricci",
         },
         manifest: {
-            name: "labouffe",
-            short_name: "labouffe",
-            description: "Welcome in labouffe",
+            name: "Ricci",
+            short_name: "Ricci",
+            description: "Welcome in Ricci",
             lang: "en",
             display: "standalone",
             start_url: "/?standalone=true",
