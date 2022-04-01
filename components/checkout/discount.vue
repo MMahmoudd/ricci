@@ -17,9 +17,9 @@ export default {
     finally_amount() {
       if (this.amount && this.amount) {
         if (this.type === "percentage") {
-            return this.total - (this.total * (this.amount / 100))
+          return (this.total * (this.amount / 100)).toFixed(2);
         } else if (this.type === "fixed") {
-            return this.amount
+          return this.amount;
         }
       }
     },

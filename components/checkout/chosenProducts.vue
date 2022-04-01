@@ -266,7 +266,7 @@ export default {
     finalDiscount() {
       if (this.discount_amount) {
         if (this.discount_type === "percentage") {
-          return this.total - this.total * (this.discount_amount / 100);
+          return this.total * (this.discount_amount / 100);
         } else if (this.discount_type === "fixed") {
           return this.discount_amount;
         }
