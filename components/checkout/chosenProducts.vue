@@ -276,7 +276,7 @@ export default {
     },
 
     finalTotal() {
-      return this.total + (this.deliveryPrice || 0);
+      return this.total + (this.deliveryPrice || 0) + (this.total * 14) / 100;
     },
   },
   watch: {
