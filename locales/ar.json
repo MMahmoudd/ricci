@@ -86,7 +86,7 @@
   "cart": {
     "myCart": "سلة التسويق",
     "backToShop": "الرجوع للتسوق",
-    "tax": "الضريبه المضافه",
+
     "subtotal": "المجموع",
     "continue": "أكمل",
     "noItemsInCart": "لا يوجد عناصر في سلة التسويق",
@@ -96,6 +96,8 @@
   },
 
   "checkout": {
+    "tax": "الضريبه المضافه",
+    "service": "الخدمات ",
     "checkout": "الدفع",
     "chooseNewLocation": "اختار عنوان جديد",
     "deleteAllCartData": "احذف جميع عناصر السلة",

@@ -130,6 +130,7 @@ export default {
     async getSettings() {
       try {
         const response = await commonService.getSettings();
+
         const { data } = response;
         const { status, settings } = data;
         if (status !== true) {

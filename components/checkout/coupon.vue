@@ -6,9 +6,12 @@
         class="d-inline-block"
         :placeholder="$t('checkout.couponPlaceholder')"
       />
-      <b-button class="delete" type="submit">{{
-        !loading ? $t("checkout.submitCoupon") : "..."
-      }}</b-button>
+      <b-button
+        class="delete"
+        style="background-color: #cb9f7c"
+        type="submit"
+        >{{ !loading ? $t("checkout.submitCoupon") : "..." }}</b-button
+      >
     </b-form>
     <div class="alert-div">
       <b-alert
@@ -55,7 +58,7 @@ export default {
       if (response.message && response.status === "200") {
         // TODO: Add $t
         this.SuccessMessage = "تم تطبيق الخصم بنجاح";
-        
+
         this.$emit("input", {
           coupon: this.couponNumber,
           discount_amount: response.data.discount_amount,
@@ -81,7 +84,6 @@ export default {
 </script>
 
 <style scoped>
-
 .couponContainer input[type="text"] {
   width: 250px;
   margin: 0px 10px;
