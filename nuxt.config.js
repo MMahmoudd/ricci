@@ -1,6 +1,6 @@
 import i18n from "./config/i18n";
-
 export default {
+
     target: "static",
     env: {
         APP_URL: "http://localhost:3000",
@@ -78,7 +78,7 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: ["bootstrap-vue/nuxt", "@nuxtjs/pwa", "cookie-universal-nuxt"],
+    modules: ["bootstrap-vue/nuxt", "@nuxtjs/pwa", "cookie-universal-nuxt","nuxt-maintenance-mode"],
     pwa: {
         meta: {
             title: "Ricci",
@@ -89,12 +89,19 @@ export default {
             short_name: "Ricci",
             description: "Welcome in Ricci",
             lang: "en",
-            display: "standalone",
-            start_url: "/?standalone=true",
+          display: "standalone",
+
+          start_url: "/?standalone=true",
         },
         icon: {
             source: "./static/logo.png",
-        },
+      },
+  //     module: ['nuxt-maintenance-mode'],
+  //       maintenance: {
+  //   enabled: !!process.env.MAINTENANCE_MODE, // If given truthy value, activation maintenance mode on startup your nuxt application.
+  //   path: '/maintenance', // maintenance fallback content routing.
+  //   matcher: /^\/admin/ // Path to be in maintenance mode (regex).
+  // },
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build

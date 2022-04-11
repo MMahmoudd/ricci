@@ -23,7 +23,9 @@ const Login = {
             this.$router.push('/login')
         },
         addTokenToState(state, token) {
-            state.token = token
+          state.token = token
+            this.$cookies.set('token', token)
+
         },
         loginErrorMessage(state, error) {
             state.loginErrorMessage = error

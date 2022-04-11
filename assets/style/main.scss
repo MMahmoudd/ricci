@@ -237,7 +237,7 @@ p {
       position: relative;
       transition: all 0.4s ease-in-out;
       img {
-        width: 100%;
+        width: inherit;
         height: -webkit-fill-available;
       }
     }
@@ -1146,3 +1146,14 @@ p {
 }
 
 // End gallery-page-component
+//start foodclub
+#over {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  position: fixed;
+  bottom: 5%;
+  overflow: auto;
+}
+
+//end food club

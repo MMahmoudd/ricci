@@ -12,7 +12,7 @@ export default {
                 if (response.status === 200) {
                     console.log('response', response)
                     localStorage.setItem('token', response.data.token)
-                    this.$cookies.set('token', response.data.token)
+                    // this.$cookies.set('token', response.data.token)
                     localStorage.setItem('userData', JSON.stringify(response.data.data))
                     return response
                 }
