@@ -48,32 +48,33 @@ p {
 // Start Default Layout
 // Start Navbar
 .navbar {
-  width: 100%;
-  margin: auto;
-  height: 55px;
-  top: 25px;
-  z-index: 1000;
-  position: absolute;
+width: 103%;
+margin: auto;
+height: 55px;
+top: 0px;
+z-index: 1000;
+padding: inherit;
   nav {
-    width: 70%;
+    width: inherit;
     margin: auto;
     position: relative;
-    border-radius: 35px;
     // background-color: rgba(255, 255, 255, 0.6);
     .navbar-brand {
-      width: 60px;
-      margin: 7px;
-      img {
-        width: 100%;
-        vertical-align: super;
-      }
+    width: 60px;
+    margin: 14%;
+    margin-left: 42px;
+
+    img {
+      width: 100%;
+    }
     }
     .navbar-nav {
       justify-content: space-around;
       width: 60%;
+      padding-left: revert;
     }
     .ml-auto {
-      padding-right: 20px;
+      padding-right: 5%;
       justify-content: unset !important;
       width: unset !important;
       .nav-link {
