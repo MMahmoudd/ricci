@@ -3,26 +3,46 @@
     <div class="container">
       <div class="row pt-5">
         <div class="col-md-10">
-        <h2 class="header-section text-left">{{$t('menu.menu')}}</h2>
+          <h2 class="header-section text-left">
+            <strong>{{ $t("menu.menu") }}</strong>
+          </h2>
           <div v-if="products.length > 0">
             <ProductComponent class="pt-5" :allProducts="products" />
           </div>
           <div v-else>
-            {{$t('global.noData')}}
+            {{ $t("global.noData") }}
           </div>
         </div>
         <div class="col-md-2">
-          <h2 class="header-section text-left">{{$t('menu.category')}}</h2>
+          <h2 class="header-section text-left">{{ $t("menu.category") }}</h2>
           <div class="menue-items pt-5">
-          <div class="all">
-            <b-form-group v-slot="{ ariaDescribedby1 }">
-              <b-form-radio @change="fetchAllItems()" v-model="selected" :aria-describedby="ariaDescribedby1" name="some-radios">{{$t('menu.all')}}</b-form-radio>
-            </b-form-group>
-          </div>
-            <div v-for="(item) in categories" :key="item.id">
+            <div class="all">
+              <b-form-group v-slot="{ ariaDescribedby1 }">
+                <b-form-radio
+                  @change="fetchAllItems()"
+                  v-model="selected"
+                  :aria-describedby="ariaDescribedby1"
+                  name="some-radios"
+                  >{{ $t("menu.all") }}</b-form-radio
+                >
+              </b-form-group>
+            </div>
+            <div v-for="item in categories" :key="item.id">
               <div class="category-item text-left">
                 <b-form-group v-slot="{ ariaDescribedby }">
-                  <b-form-radio @change="value => {changeCategory(value);fetchAllItems()}" v-model="selected" :aria-describedby="ariaDescribedby" name="some-radios" :value="item.id">{{item.name_translate}}</b-form-radio>
+                  <b-form-radio
+                    @change="
+                      (value) => {
+                        changeCategory(value);
+                        fetchAllItems();
+                      }
+                    "
+                    v-model="selected"
+                    :aria-describedby="ariaDescribedby"
+                    name="some-radios"
+                    :value="item.id"
+                    >{{ item.name_translate }}</b-form-radio
+                  >
                 </b-form-group>
               </div>
             </div>
@@ -41,73 +61,72 @@
   </div>
 </template>
 <script>
-import { ServiceFactory } from '../../services/ServiceFactory'
-import ProductComponent from '../global/products.vue'
-const CategoryService = ServiceFactory.get('Category')
-const topProductService = ServiceFactory.get('Products')
+import { ServiceFactory } from "../../services/ServiceFactory";
+import ProductComponent from "../global/products.vue";
+const CategoryService = ServiceFactory.get("Category");
+const topProductService = ServiceFactory.get("Products");
 export default {
-  name: 'topProduct',
+  name: "topProduct",
   components: {
     ProductComponent,
   },
   data: () => ({
     products: [],
     categories: [],
-    selected: '',
+    selected: "",
     minAngle: 1,
     maxAngle: 500,
     data: [],
-    }),
-      computed: {
-        sliderMin: {
-          get: function() {
-            var val = parseInt(this.minAngle);
-            return val;
-          },
-          set: function(val) {
-            val = parseInt(val);
-            if (val > this.maxAngle) {
-              this.maxAngle = val;
-            }
-            this.minAngle = val;
-          }
-        },
-        sliderMax: {
-          get: function() {
-            var val = parseInt(this.maxAngle);
-            return val;
-          },
-          set: function(val) {
-            val = parseInt(val);
-            if (val < this.minAngle) {
-              this.minAngle = val;
-            }
-            this.maxAngle = val;
-          }
+  }),
+  computed: {
+    sliderMin: {
+      get: function () {
+        var val = parseInt(this.minAngle);
+        return val;
+      },
+      set: function (val) {
+        val = parseInt(val);
+        if (val > this.maxAngle) {
+          this.maxAngle = val;
         }
+        this.minAngle = val;
       },
-    created() {
-      this.selected = +this.$route.query.category || ''
-      this.fetchAllItems(),
-      this.fetchAllCategories()
     },
-    methods: {
-      changeCategory(value) {
-          this.$router.push({query: {category : value}})
+    sliderMax: {
+      get: function () {
+        var val = parseInt(this.maxAngle);
+        return val;
       },
-      async fetchAllItems () {
-        // this.$router.push({query: {category : this.selected}})
-        this.dataLoading = true
-        const items = await topProductService.getAllProducts(this.selected)
-        this.products = items.items
-        this.dataLoading = false
+      set: function (val) {
+        val = parseInt(val);
+        if (val < this.minAngle) {
+          this.minAngle = val;
+        }
+        this.maxAngle = val;
       },
-      async fetchAllCategories () {
-        this.dataLoading = true
-        const items = await CategoryService.getAllCategories()
-        this.categories = items.categories
-        this.dataLoading = false
-      },
-    }
-}
+    },
+  },
+  created() {
+    this.selected = +this.$route.query.category || "";
+    this.fetchAllItems(), this.fetchAllCategories();
+  },
+  methods: {
+    changeCategory(value) {
+      this.$router.push({ query: { category: value } });
+    },
+    async fetchAllItems() {
+      // this.$router.push({query: {category : this.selected}})
+      this.dataLoading = true;
+      const items = await topProductService.getAllProducts(this.selected);
+      this.products = items.items;
+      this.dataLoading = false;
+    },
+    async fetchAllCategories() {
+      this.dataLoading = true;
+      const items = await CategoryService.getAllCategories();
+      this.categories = items.categories;
+      this.dataLoading = false;
+    },
+  },
+};
 </script>

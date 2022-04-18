@@ -6,14 +6,12 @@
     </div>
     <div class="justify-content-center">
       <a
-        id="over"
         href="https://foodclub-eg.com/"
         target="_blank"
         rel="noopener noreferrer"
-        class="btn btn-primary"
         style="position: fixed"
       >
-        foodclub
+        <img id="over" src="../assets/images/Foodclup.jpg" />
       </a>
     </div>
     <FooterComponent />

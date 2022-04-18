@@ -16,8 +16,24 @@
             }}</nuxt-link>
           </b-nav-item>
           <b-nav-item>
+            <nuxt-link :to="localePath('/news')">{{
+              $t("global.news")
+            }}</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
+            <nuxt-link :to="localePath('/gallery')">{{
+              $t("global.gallery")
+            }}</nuxt-link>
+          </b-nav-item>
+
+          <b-nav-item>
             <nuxt-link :to="localePath('/contactUs')">{{
               $t("global.contactUs")
+            }}</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
+            <nuxt-link :to="localePath('/event')">{{
+              $t("global.event")
             }}</nuxt-link>
           </b-nav-item>
           <b-nav-item>
