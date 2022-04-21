@@ -2,7 +2,7 @@
   <div class="navbar">
     <b-navbar toggleable="lg" type="dark">
       <b-navbar-brand :to="localePath('/')">
-        <img src="../../assets/images/VegasLogo.svg" alt="logo" />
+        <img src="../../assets/images/login.png" alt="logo" />
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -25,12 +25,6 @@
               $t("global.gallery")
             }}</nuxt-link>
           </b-nav-item>
-
-          <b-nav-item>
-            <nuxt-link :to="localePath('/contactUs')">{{
-              $t("global.contactUs")
-            }}</nuxt-link>
-          </b-nav-item>
           <b-nav-item>
             <nuxt-link :to="localePath('/event')">{{
               $t("global.event")
@@ -39,6 +33,16 @@
           <b-nav-item>
             <nuxt-link :to="localePath('/branches')">{{
               $t("global.branches")
+            }}</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
+            <nuxt-link :to="localePath('/partener')">{{
+              $t("global.partener")
+            }}</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
+            <nuxt-link :to="localePath('/contactUs')">{{
+              $t("global.contactUs")
             }}</nuxt-link>
           </b-nav-item>
         </b-navbar-nav>

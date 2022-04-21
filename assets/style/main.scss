@@ -65,7 +65,7 @@ padding: inherit;
     margin-left: 42px;
 
     img {
-      width: 100%;
+      width: 85%;
     }
     }
     .navbar-nav {
@@ -238,7 +238,7 @@ padding: inherit;
       position: relative;
       transition: all 0.4s ease-in-out;
       img {
-        width: inherit;
+        width: 220px;
         height: -webkit-fill-available;
       }
     }
@@ -548,18 +548,16 @@ padding: inherit;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
     }
-    .category-image {
+  .category-image {
+    width: 100%;
+
+    img {
       width: 100%;
-      img {
-        max-width: 100%;
-        border-radius: 10px;
-        height: 180px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-      }
+      border-radius: 2px;
+      height: 150px;
+      object-fit: cover;
     }
+  }
   }
 }
 
@@ -996,7 +994,7 @@ padding: inherit;
       margin: 5px;
       padding: 15px;
       height: 100px;
-      background-color: #d9b3b4;
+      background-color: #AE8625;
       .custom-control-input:checked ~ .custom-control-label::before {
         border-color: $mainColor;
         background-color: $mainColor;

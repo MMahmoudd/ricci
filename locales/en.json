@@ -17,7 +17,8 @@
     "news": "News",
     "information": "Information",
     "noData": "No data for now",
-    "event": "event"
+    "event": "Events",
+    "partener": "Become a partner"
   },
 
   "home": {
@@ -64,7 +65,7 @@
 
   "contactUs": {
     "contactUs": "Contact Us",
-    "getInTouch": "Get In Touch & Let's Make Something Awesome Aogether.",
+    "getInTouch": "Get In Touch & Let's Make Something Awesome Together.",
     "namePlaceholder": "Name",
     "emailPlaceholder": "Email",
     "messagePlaceholder": "message",

@@ -17,6 +17,19 @@ export default {
         return error.response.data.errors;
       });
   },
+   sendMassagePartener(data) {
+    return Service.post(`${resource}/become_partener?restaurant_id=4`, {
+      ...data,
+    })
+      .then((response) => {
+        if (response.status === 200) {
+          return response;
+        }
+      })
+      .catch((error) => {
+        return error.response.data.errors;
+      });
+  },
   getSlider() {
     return Service.get(`${resource}/sliders?restaurant_id=4`)
       .then((response) => {

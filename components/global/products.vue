@@ -25,7 +25,11 @@
               </div>
               <div class="product-details d-flex justify-content-between mt-1">
                 <p class="product_title">{{ product.name_translate }}</p>
-                <p class="product_price">{{ product.sizes[0].price }} LE</p>
+                <strong
+                  ><p class="product_price">
+                    {{ product.sizes[0].price }} LE
+                  </p></strong
+                >
               </div>
             </div>
           </div>
@@ -65,8 +69,8 @@
                 >
                   {{ size.name }}
                   <span class="price"
-                    >{{ " " + size.price }} L.E</span
-                  ></b-form-radio
+                    ><strong> ( {{ " " + size.price }} L.E )</strong>
+                  </span></b-form-radio
                 >
               </b-form-group>
             </div>
@@ -98,7 +102,9 @@
             >
               <b-form-checkbox :value="addon">
                 {{ addon.name_translate }}
-                <span class="price"> {{ "  " + addon.price }}L.E</span>
+                <span class="price">
+                  <strong>{{ "  " + addon.price }}L.E </strong></span
+                >
               </b-form-checkbox>
             </b-form-checkbox-group>
           </b-form-group>

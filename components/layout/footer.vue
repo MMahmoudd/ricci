@@ -6,7 +6,8 @@
           <div class="col-md-2">
             <div class="logo">
               <img src="../../assets/images/VegasLogo.svg" alt="logo" />
-              <div>15727</div>
+              <div>{{ info.phone }}</div>
+              <!-- <div>15727</div> -->
               <div class="social">
                 <a :href="links.facebook" target="_blank"
                   ><i class="fab fa-facebook-square"></i
@@ -113,6 +114,9 @@ export default {
       youtube: "",
       instagram: "",
     },
+    info: {
+      phone: "",
+    },
     categories: [],
   }),
   created() {
@@ -143,6 +147,9 @@ export default {
           instagram,
           youtube,
         };
+
+        const { phone1: phone } = settings;
+        this.info = { phone };
       } catch (error) {
         console.log({ error });
       }
